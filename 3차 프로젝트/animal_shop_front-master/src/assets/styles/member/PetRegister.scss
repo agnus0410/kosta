@@ -1,0 +1,63 @@
+.pet-register{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  .pet-info{
+    display:flex;
+    width: 480px;
+    height: 800px;
+    align-items:flex-end;
+
+
+
+    .info-content{
+      width: 100%;
+      height: 100%;
+      display:flex;
+      flex-direction: column;
+      //justify-content: space-between;
+      .prev{
+        margin-bottom: 8px;
+      }
+      .pet-register-form{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        a{
+          width: 100%;
+        }
+
+      }
+
+      button{
+        width: 100%;
+        height: 40px;
+      }
+
+      .default-input{
+        width: 100%;
+
+
+      }
+      input,.info-input{
+        width: 100%;
+        height: 40px;
+      }
+      .two-buttons{
+        display: flex;
+        //.selected{
+        //  color: #ffe003;
+        //}
+
+
+      }
+    }
+
+
+    }
+
+
+}

@@ -1,0 +1,15 @@
+.title-container{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  padding-top:2rem;
+  padding-bottom:2rem;
+  border-bottom: 1px solid var(--alpha-5);
+  margin-bottom: 0.5rem;
+
+  .default{
+    font-weight: 400;
+    //background: #ffe003;
+  }
+  
+}

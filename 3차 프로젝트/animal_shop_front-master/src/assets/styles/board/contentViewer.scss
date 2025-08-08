@@ -1,0 +1,128 @@
+// ContentsViewer 스타일
+.content-info-container {
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  background-color: var(--default-background-color);
+  border-radius: 8px;
+
+  .info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .content-info {
+      h2 {
+        font-size: 1.2rem;
+        color: var(--point-color);
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+        color: var(--default-font-color);
+        margin: 0;
+      }
+    }
+
+    .content-author-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      color: var(--alpha-50);
+
+      .user-name {
+        font-weight: 600;
+        color: var(--default-font-color);
+      }
+
+      .hearts {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-weight: 600;
+        color: var(--point-color);
+      }
+
+      .modified-time,
+      .hits {
+        font-size: 0.8rem;
+        color: var(--alpha-40);
+      }
+    }
+  }
+
+  .content-modify-button {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+
+    button {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--reverse-font-color);
+      background: var(--point-background-color);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.1s ease;
+
+      &:hover {
+        background: var(--point-background-color-80);
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+
+      .fa-xmark {
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.view-content {
+
+  padding: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--default-font-color);
+  background: var(--layer-background-color);
+  border-radius: 8px;
+}
+
+.heart-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--reverse-font-color);
+    background: var(--point-background-color);
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+
+    &:hover {
+      background: var(--point-background-color-80);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+#download{
+  background: none;
+  border: none;
+}

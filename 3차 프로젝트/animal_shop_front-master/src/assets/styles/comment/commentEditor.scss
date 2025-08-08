@@ -1,0 +1,151 @@
+
+.review-editor{
+  .star-rating{
+    border: none;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+    justify-content: start;
+    .rating-comment{
+      font-size: 1.5rem;
+      text-align: center;
+
+
+    }
+    .selected{
+
+      color: #ffcd03;
+
+    }
+
+    button {
+      border: none;
+      background: none;
+      color: #d3d3d3;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.input-comment {
+
+
+
+  background: var(--sercondary-background-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px/10px;
+  min-height: 100px;
+  margin-bottom: 1rem;
+
+
+
+
+
+  textArea {
+    padding: 20px;
+    border-radius: 10px/10px;
+    font-size: 1rem;
+    background: var(--sercondary-background-color);
+    border: 0px solid var(--sercondary-color);
+    resize: none;
+    width: 100%;
+    min-height: 100px;
+
+  }
+
+  .btn-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    //height: 100px;
+
+
+    .img-upload-section{
+      display: flex;
+      //height: 50px;
+
+      .images{
+        display: flex;
+        flex-direction: row;
+        .review-image{
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+
+
+        }
+        .delete-image{
+          border: none;
+          position: relative;
+          left: -20px;
+          width: 20px;
+          height: 20px;
+
+        }
+
+      }
+    }
+
+    .input-file-button {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      background-color: var(--default-background-color);
+      border-radius: 10px/10px;
+      margin: 10px;
+      width: 50px;
+      height: 40px;
+      cursor: pointer;
+
+
+    }
+
+    #input-file {
+      display: none;
+    }
+
+    .submit-button {
+      //font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      background-color: var(--default-background-color);
+      border-radius: 10px/10px;
+      margin: 10px;
+      width: 50px;
+      height: 40px;
+      cursor: pointer;
+      border: none;
+
+
+    }
+  }
+
+}
+
+.go-login {
+  background: var(--sercondary-background-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px/10px;
+  min-height: 100px;
+  text-align: center;
+}
+
+

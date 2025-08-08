@@ -1,0 +1,142 @@
+@mixin listGap {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    flex-wrap: wrap; 
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+  }
+  
+ @mixin button-style ($b: var(--point-background-color-20), $h: var(--point-background-color-80)) {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    background-color: $b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background-color: $h;
+      color: white;
+    }
+  }
+  
+  .seller-search-main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  
+    .seller-search-container {
+      @include flex-center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 1.5rem;
+  
+      select, input[type="search"] {
+        min-width: 150px;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+  
+      button {
+        @include button-style;
+        background-color: var(--point-background-color-80);
+        color: white;
+  
+        &:hover {
+          background-color: var(--point-shadow-color);
+        }
+      }
+
+      .search-input {
+        display: flex;
+        gap: 5px;
+        margin-left: 1rem;
+      }
+    }
+  
+    .filter-list {
+      @include flex-center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+  
+      .filter-buttons {
+        @include flex-center;
+        flex-wrap: wrap;
+        gap: 10px;
+  
+        button {
+          @include button-style;
+          font-size: 0.9rem;
+        }
+
+        .reset-button {
+            @include button-style(var(--point-shadow-color), var(--warning-color));
+            color: white;
+        }
+      }
+  
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+
+.sellerItemListContainer {
+    width: 100%;
+    
+    .SellerItemListHeaderContainer {
+        display: grid;
+        grid-template-columns: 0.6fr 0.7fr 2fr 1fr 0.6fr 0.6fr 0.8fr 0.5fr 0.4fr 0.4fr 0.4fr;
+        padding: 1rem;
+        background-color: rgb(242, 242, 242);
+        gap: 10px;
+        align-items: center;
+        
+        > div {
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .sellerItemContainer {
+        display: grid;
+        grid-template-columns: 0.6fr 0.7fr 2fr 1fr 0.6fr 0.6fr 0.8fr 0.5fr 0.4fr 0.4fr 0.4fr;
+        padding: 1rem;
+        border-bottom: 1px solid #ddd;
+        gap: 10px;
+        align-items: center;
+
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        > div {
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    button {
+        background-color: var(--point-background-color-20);
+        padding: 5px 10px;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: var(--point-background-color-80);
+            font-weight: bold;
+            color: white;
+        }
+    }
+}

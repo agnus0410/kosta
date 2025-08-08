@@ -1,0 +1,82 @@
+.pet-detail-info{
+  width: 624px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+
+
+
+  img{
+    width: 560px;
+    height: 560px;
+    border-radius: 24px/24px;
+    object-fit: cover;
+
+
+  }
+  .name-section{
+
+    .icon{
+      font-size: 24px;
+      color: #ffe003;
+    }
+
+    display: flex;
+    gap: 8px;
+  }
+  .link-container {
+    //width: 30%;
+    display: flex;
+    justify-content: flex-end; // 부모 컨테이너를 오른쪽 정렬
+
+    .go-to-wiki {
+      gap: 4px;
+      display: flex;
+      flex-direction: column; // 세로 방향 정렬
+      align-items: flex-end; // 아이템을 가로로 오른쪽 정렬
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background: var(--point-color);
+        border: 1px solid var(--point-shadow-color);
+        width: 120px;
+        height: 40px;
+        color: white;
+      }
+    }
+  }
+
+  .detail-info-text{
+    display: flex;
+    width: 560px;
+    flex-direction: column;
+
+    .pet-info-content{
+      display: flex;
+      justify-content: space-between;
+      .detail-pet-info{
+        h2 {
+          max-width: 200px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        //width: 50%;
+      }
+    }
+  }
+
+  .two-buttons{
+    display: flex;
+
+
+  }
+
+
+
+}

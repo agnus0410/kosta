@@ -1,0 +1,98 @@
+
+.my-page{
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  //height: 100vh;
+  width: 100%;
+  gap: 1rem;
+  .user-profiles{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    .profile-img {
+      background-color: transparent;
+    }
+
+  .user-info{
+    width: 50%;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .user-info-text{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    //height: 100vh;
+  }}}
+
+
+
+
+  .my-activity{
+    width: 100%;
+
+    .my-activity-container{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .info-container{
+        width: 50%;
+
+        ul{
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+        li.selected > a {
+          font-weight: bold;
+          color: var(--point-color);
+          border-bottom: 2px solid var(--point-shadow-color); /* 기본 상태에서 밑줄 숨김 */
+
+        }
+        li {
+          font-size: 1.2rem;
+          a {
+            border-bottom: 2px solid transparent; /* 기본 상태에서 밑줄 숨김 */
+            transition: border-bottom-color 0.1s ease; /* 밑줄 색상만 애니메이션 */
+          }
+          a:hover {
+            border-bottom-color: var(--point-shadow-color); /* hover 상태에서 밑줄 색상 변경 */
+          }
+        }
+
+      }
+    }
+  }
+  .shop{
+    width: 100%;
+    //border: solid 1px var(--alpha-50);
+
+    border-radius: 30px/30px;
+    //padding:24px;
+    //background: #eeeeee;
+
+
+    //box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.06)
+
+    h2{
+      margin-bottom: 16px;
+      margin-left: 16px;
+    }
+
+
+  }
+}

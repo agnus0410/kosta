@@ -1,0 +1,37 @@
+.adminMenu{
+  position: sticky; /* 스크롤 시 상단에 고정 */
+  top: 76px; /* 고정된 헤더 높이와 동일하게 설정 */
+  z-index: 10; /* 헤더 바로 아래에 위치하도록 조정 */
+  background: white;
+  width: 100%;
+  height: 50px;
+  color: #000;
+  //border-bottom: solid 1px var(--point-shadow-color-30);
+  box-shadow: 0px 5px 10px -9px var(--point-shadow-color-30);
+
+  //position: relative;
+  ul{
+    list-style:none;
+    display: flex;
+    align-items: center;
+    //justify-content: center;
+    text-align: center;
+
+    li{
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      float: left;
+      width: 100px;
+      height: 50px;
+
+    }
+    li:hover{
+        border-bottom: 2px solid var(--point-shadow-color-30);
+
+    }
+  }
+
+}

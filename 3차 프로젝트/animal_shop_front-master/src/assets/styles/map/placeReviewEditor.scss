@@ -1,0 +1,188 @@
+
+
+.star-rating{
+  border: none;
+  width: 100%;
+
+  justify-content: space-between;
+
+  margin-bottom: 4px ;
+
+  .stars{
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rating-comment{
+    font-size: 1rem;
+    text-align: center;
+
+
+  }
+  .selected{
+
+    color: #ffcd03;
+
+  }
+
+  button {
+    border: none;
+    background: none;
+    color: #d3d3d3;
+    font-size: 1.5rem;
+    margin-right:-10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.input-place-review {
+
+
+
+  background: var(--sercondary-background-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px/10px;
+  min-height: 100px;
+  margin-bottom: 1rem;
+
+
+
+
+
+  textArea {
+    padding: 20px;
+    border-radius: 10px/10px;
+    font-size: 1rem;
+    background: var(--sercondary-background-color);
+    border: 0px solid var(--sercondary-color);
+    resize: none;
+    width: 100%;
+    min-height: 100px;
+
+  }
+
+  .btn-section {
+    //height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    .img-upload-section{
+      display: flex;
+
+      .images{
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+        .dark {
+          filter: brightness(30%);
+        }
+
+
+        .last-image{
+
+          display: inline-block;
+          position: relative;
+          //width: 100px;
+          //height: 100px;
+          .count-text{
+            font-weight: 700;
+            font-size: 1.5rem;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            position: absolute;
+            top: 65%;
+            left: 15%;
+            //transform: translate(-50%, -50%);
+          }
+        }
+        .image {
+          display: flex;
+          position: relative; /* 부모 컨테이너를 상대적으로 위치시킴 */
+
+          .review-image {
+            width: 50px;
+            height: 50px;
+            margin-right: 4px;
+            object-fit: cover;
+          }
+
+          .delete-image {
+            position: absolute; /* 다른 요소의 레이아웃에 영향 주지 않음 */
+            top: 0; /* 부모 컨테이너 기준 상단 */
+            left: 30px; /* review-image의 오른쪽으로 적절히 위치 */
+            width: 20px;
+            height: 20px;
+            border: none;
+            z-index: 10; /* 다른 요소 위에 표시 */
+            //background-color: transparent; /* 필요에 따라 버튼 배경 설정 */
+          }
+        }
+
+
+
+      }
+    }
+
+    .input-file-button {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      background-color: var(--default-background-color);
+      border-radius: 10px/10px;
+      margin: 10px;
+      width: 50px;
+      height: 40px;
+      cursor: pointer;
+
+
+    }
+
+    #input-file {
+      display: none;
+    }
+
+    .submit-button {
+      //font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      background-color: var(--default-background-color);
+      border-radius: 10px/10px;
+      //margin: 10px;
+      width: 45px;
+      height: 40px;
+      cursor: pointer;
+      border: none;
+      margin-right: 4px;
+
+
+    }
+  }
+
+}
+
+.go-login {
+  background: var(--sercondary-background-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px/10px;
+  min-height: 100px;
+  text-align: center;
+}
+
+

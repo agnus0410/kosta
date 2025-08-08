@@ -1,0 +1,83 @@
+:root {
+    /*--font-family: "pretendard", pretendard, "sf pro kr", "sf pro text", "sf pro icons", "apple sd gothic neo", -apple-system, blinkmacsystemfont, roboto, "noto sans kr", "segoe ui", "malgun gothic", "apple color emoji", "segoe ui emoji", "segoe ui symbol", sans-serif;*/
+    /*--font-family-content: "sf pro kr", "sf pro text", "sf pro icons", "apple sd gothic neo", -apple-system, blinkmacsystemfont, system-ui, roboto, "helvetica neue", "segoe ui", "noto sans kr", "malgun gothic", "apple color emoji", "segoe ui emoji", "segoe ui symbol", sans-serif;*/
+    --body-font-color: #000000;
+    --body-background-color: #FFFFFFFF;
+    --body-background-color-50: rgba(255, 255, 255, 0.5);
+    --body-background-color-30: rgba(255, 255, 255, 0.3);
+
+    --header-bright-font-color: #FFF;
+    --header-dark-font-color: rgba(17, 61, 12, 0.76);
+
+    --header-background-color: var(--point-color);
+    --point-color: #76a970;
+    --point-background-color: #76a970;
+    --point-background-color-10: #76a9701a;
+    --point-background-color-20: #76a97033;
+    --point-background-color-80: #76a970c8;
+    --point-background-color-90: #76a970e6;
+    --point-shadow-color: #5a8161;
+    --point-shadow-color-30: #5a81614d;
+    --point-shadow-color-50: #5a816180;
+
+    --default-font-color: #000;
+    --reverse-font-color: #eee;
+    --default-background-color: #fff;
+    --layer-background-color: #fff;
+    --sercondary-background-color: #eee;
+    --default-anchor-color: #000;
+    --default-visited-anchor-color: #999;
+    --alpha-3: rgba(0, 0, 0, 0.01);
+    --alpha-5: rgb(0 0 0 / 5%);
+    --alpha-10: rgb(0 0 0 / 10%);
+    --alpha-20: rgb(0 0 0 / 20%);
+    --alpha-30: rgba(0, 0, 0, 0.3);
+    --alpha-40: rgb(0 0 0 / 40%);
+    --alpha-50: rgb(0 0 0 / 50%);
+    --alpha-70: rgb(0 0 0 / 70%);
+    --alpha-80: rgb(0 0 0 / 80%);
+    --alpha-reverse-90: rgb(255 255 255 / 80%);
+    --warning-color: #D94F30;
+    --warning-color-10: rgb(231 60 60 / 10%);
+    --apple-color: #000;
+    --google-color: #d0543f;
+    --facebook-color: #1a76f2;
+    --twitter-color: #1ea1f1;
+    --naver-color: #1ec800;
+    --kakao-color: #ffe003;
+    --tumblr-color: #001935;
+    --pinterest-color: #e70022;
+    --flash-success-color: #10b886;
+    --flash-error-color: #e74c3c;
+    --list-line: var(--alpha-5);
+    --gap: 10px;
+    --mobile-gap: 10px;
+}
+
+:root {
+    --site-width: 1080px;
+    --banner-gap: 24px;
+    --banner-mobile-gap: 16px;
+    --header-height: 76px;
+    /*--category-height: 300px;*/
+
+
+    --glass-bg-color: rgba(255, 255, 255, 0.15); /* 투명 유리 느낌 */
+    --glass-border-color: rgba(255, 255, 255, 0.2); /* 부드러운 테두리 */
+    --glass-shadow-color: rgba(0, 0, 0, 0.1); /* 은은한 그림자 */
+    --menu-item-hover-bg: rgba(118, 169, 112, 0.3); /* 호버 상태 */
+    --menu-item-active-bg: rgba(118, 169, 112, 0.5); /* 선택 상태 */
+    --navbar-blur: 10px; /* 블러 효과 */
+
+    --button-bg-color: rgba(255, 255, 255, 0.15); /* 투명 유리 느낌 */
+    --button-border-color: rgba(255, 255, 255, 0.3); /* 부드러운 테두리 */
+    --button-shadow-light: rgba(0, 0, 0, 0.1); /* 은은한 그림자 */
+    --button-shadow-hover: rgba(0, 0, 0, 0.2); /* 호버 시 강조 그림자 */
+    --button-selected-bg: rgba(118, 169, 112, 0.4); /* 선택 상태 배경 */
+    --button-text-color: #ffffff; /* 기본 텍스트 색상 */
+    --button-hover-bg: rgba(118, 169, 112, 0.3); /* 호버 시 배경 */
+    --button-selected-text: #ffffff; /* 선택된 텍스트 색상 */
+
+}
+
+

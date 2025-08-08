@@ -1,0 +1,14 @@
+.category-selector {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .all-product-btn{
+    padding: 12px;
+    background: var(--point-color);
+    border-radius: 12px;
+    color: white;
+  }
+}

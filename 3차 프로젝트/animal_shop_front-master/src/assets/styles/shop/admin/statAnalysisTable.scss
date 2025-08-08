@@ -1,0 +1,75 @@
+.stat-analysis-table{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  .table-contents{
+    width: 50%;
+  }
+
+.table-container{
+  width: 500px;
+
+  .table {
+    display: table;
+    width: 100%;
+
+
+    border:1px solid  var(--point-shadow-color-50);
+    //width: 100%;
+    border-collapse: collapse;
+    .table-header {
+      background-color: var(--point-background-color-20);
+      padding: 10px;
+      height: 40px;
+      text-align: center;
+      th{
+        width: 125px;
+        vertical-align: middle;
+      }
+    }
+    .table-body{
+
+      text-align: center;
+
+      td{
+        width: 125px;
+        height: 40px;
+        vertical-align: middle;
+      }
+
+      .with-draw{
+        display: flex;
+        justify-content: center ;
+      }
+    }
+
+  }
+
+
+}
+  tbody::-webkit-scrollbar {
+    width: 5px;
+  }
+
+tbody::-webkit-scrollbar-thumb {
+    background: var(--alpha-30); /* 스크롤바 색상 */
+    border-radius: 10px; /* 스크롤바 둥근 테두리 */
+  }
+
+tbody::-webkit-scrollbar-track {
+    background: var(--alpha-5);  /*스크롤바 뒷 배경 색상*/
+  }
+
+
+table tbody {
+  display: block;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+table thead, table tbody tr {
+  display: table;
+  width: 100%;
+}}
